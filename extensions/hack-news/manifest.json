@@ -1,1 +1,15 @@
-{}
+{
+  "name": "Hacker News",
+  "id": "hack-news",
+  "version": "1.0.0",
+  "description": "",
+  "icon": "logo.svg",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Hack News",
+      "subtitle": "",
+      "description": "Get the latest Hacker News stories."
+    }
+  ]
+}
