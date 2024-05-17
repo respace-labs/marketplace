@@ -1,0 +1,14 @@
+{
+  "name": "Base64",
+  "id": "base64",
+  "description": "Encode and decode base64.",
+  "icon": "logo.png",
+  "commands": [
+    {
+      "name": "base64",
+      "title": "Base64",
+      "subtitle": "",
+      "description": ""
+    }
+  ]
+}
