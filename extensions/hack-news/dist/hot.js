@@ -1,0 +1,1 @@
+"use strict";(()=>{function e(n){postMessage({type:"RenderList",items:n})}function i(){e([{title:"hack news #1!!",actions:[{type:"OpenInBrowser",url:"https://www.google.com"},{type:"CopyToClipboard",content:"hello world"}]},{title:"world"}])}})();

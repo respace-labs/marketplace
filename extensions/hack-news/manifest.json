@@ -10,6 +10,12 @@
       "title": "Hack News",
       "subtitle": "",
       "description": "Get the latest Hacker News stories."
+    },
+    {
+      "name": "hot",
+      "title": "Hack News hot",
+      "subtitle": "",
+      "description": "Get the latest Hacker News stories."
     }
   ]
 }

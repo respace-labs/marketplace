@@ -1,3 +1,1 @@
-'use strict';
-
-function e(r){postMessage({type:"RenderList",items:r});}e([{title:"hack news 1...",actions:[{type:"OpenInBrowser",url:"https://www.google.com"}]},{title:"world",actions:[{type:"CopyToClipboard",content:"hello world"}]}]);
+"use strict";(()=>{function s(e){postMessage({type:"RenderList",items:e})}function r(e){postMessage({type:"Loading.",data:e})}function w(){let e="https://hacker-news.firebaseio.com/v0/topstories.json";async function m(){r({type:"spinner"});let i=(await fetch(e).then(n=>n.json()).then(n=>{let t=n.slice(0,10).map(o=>fetch(`https://hacker-news.firebaseio.com/v0/item/${o}.json`).then(a=>a.json()));return Promise.all(t)})).map((n,t)=>({icon:t+1,title:n.title,actions:[{type:"OpenInBrowser",url:"https://www.google.com"}]}));s(i)}}})();
