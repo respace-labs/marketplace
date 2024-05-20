@@ -1,0 +1,15 @@
+{
+  "name": "Free Style UI",
+  "id": "free-style-ui",
+  "description": "This is a Free Style UI demo.",
+  "icon": "logo.svg",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Free Style UI",
+      "subtitle": "",
+      "description": "",
+      "runtime": "iframe"
+    }
+  ]
+}
