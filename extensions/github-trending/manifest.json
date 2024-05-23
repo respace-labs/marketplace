@@ -1,0 +1,70 @@
+{
+  "name": "GitHub Trending",
+  "id": "github-trending",
+  "description": "GitHub Trending",
+  "icon": "logo.svg",
+  "commands": [
+    {
+      "name": "index",
+      "title": "GitHub Trending",
+      "subtitle": "",
+      "description": "",
+      "filters": {
+        "language": [
+          {
+            "label": "Default",
+            "value": "",
+            "selected": true
+          },
+          {
+            "label": "JavaScript",
+            "value": "javascript"
+          },
+          {
+            "label": "TypeScript",
+            "value": "typescript"
+          },
+          {
+            "label": "CSS",
+            "value": "css"
+          },
+          {
+            "label": "HTML",
+            "value": "html"
+          },
+          {
+            "label": "Python",
+            "value": "python"
+          },
+          {
+            "label": "Go",
+            "value": "go"
+          },
+          {
+            "label": "Rust",
+            "value": "rust"
+          },
+          {
+            "label": "Java",
+            "value": "Java"
+          }
+        ],
+        "since": [
+          {
+            "label": "Today",
+            "value": "daily",
+            "selected": true
+          },
+          {
+            "label": "This Week",
+            "value": "weekly"
+          },
+          {
+            "label": "This month",
+            "value": "monthly"
+          }
+        ]
+      }
+    }
+  ]
+}
