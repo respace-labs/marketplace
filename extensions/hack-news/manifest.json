@@ -9,13 +9,32 @@
       "name": "index",
       "title": "Hack News",
       "subtitle": "",
-      "description": "Get the latest Hacker News stories."
-    },
-    {
-      "name": "hot",
-      "title": "Hack News hot",
-      "subtitle": "",
-      "description": "Get the latest Hacker News stories."
+      "description": "Get the latest Hacker News stories.",
+      "filters": {
+        "type": [
+          {
+            "label": "Top",
+            "value": "top",
+            "selected": true
+          },
+          {
+            "label": "New",
+            "value": "new"
+          },
+          {
+            "label": "Ask",
+            "value": "ask"
+          },
+          {
+            "label": "Job",
+            "value": "job"
+          },
+          {
+            "label": "Show",
+            "value": "show"
+          }
+        ]
+      }
     }
   ]
 }
