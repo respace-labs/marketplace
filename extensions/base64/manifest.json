@@ -6,7 +6,7 @@
   "commands": [
     {
       "name": "base64",
-      "title": "Base64",
+      "title": "Encode/Decode Base64",
       "subtitle": "",
       "description": ""
     }
