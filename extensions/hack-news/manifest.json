@@ -2,8 +2,10 @@
   "name": "Hacker News",
   "id": "hack-news",
   "version": "1.0.0",
+  "author": "0xZion",
   "description": "This is a hack news demo.",
   "icon": "logo.svg",
+  "repo": "penxio/penx",
   "commands": [
     {
       "name": "index",
