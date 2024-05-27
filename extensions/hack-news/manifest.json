@@ -12,6 +12,7 @@
       "title": "Hack News",
       "subtitle": "",
       "description": "Get the latest Hacker News stories.",
+      "icon": "hot.svg",
       "filters": {
         "type": [
           {
