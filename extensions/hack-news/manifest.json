@@ -13,6 +13,7 @@
       "subtitle": "",
       "description": "Get the latest Hacker News stories.",
       "icon": "hot.svg",
+      "runtime": "worker",
       "filters": {
         "type": [
           {
