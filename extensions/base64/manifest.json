@@ -9,7 +9,8 @@
       "name": "base64",
       "title": "Encode/Decode Base64",
       "subtitle": "",
-      "description": ""
+      "description": "",
+      "runtime": "worker"
     }
   ]
 }
