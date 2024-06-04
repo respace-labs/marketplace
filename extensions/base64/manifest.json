@@ -1,6 +1,6 @@
 {
-  "name": "Base64",
-  "id": "base64",
+  "name": "base64",
+  "title": "Base64",
   "author": "0xZion",
   "description": "Encode and decode base64.",
   "icon": "logo.png",
