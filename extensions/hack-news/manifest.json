@@ -1,19 +1,23 @@
 {
-  "name": "Hacker News",
-  "id": "hack-news",
-  "version": "1.0.0",
+  "name": "hack-news",
+  "title": "Hacker News",
   "author": "0xZion",
   "description": "This is a hack news demo.",
-  "icon": "logo.svg",
-  "repo": "penxio/penx",
+  "icon": {
+    "name": "mdi--react",
+    "className": "bg-gradient-to-r from-violet-500 to-fuchsia-500"
+  },
   "commands": [
     {
       "name": "index",
       "title": "Hack News",
-      "subtitle": "",
       "description": "Get the latest Hacker News stories.",
-      "icon": "hot.svg",
-      "runtime": "worker",
+      "icon": {
+        "name": "lucide--list",
+        "className": "bg-gradient-to-r from-rose-500 to-purple-500"
+      },
+      "runtime": "iframe",
+      "framework": "react",
       "filters": {
         "type": [
           {
