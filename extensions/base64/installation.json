@@ -3,15 +3,22 @@
   "title": "Base64",
   "author": "0xZion",
   "description": "Encode and decode base64.",
-  "icon": "logo.png",
+  "icon": {
+    "name": "lucide--code",
+    "className": "bg-gradient-to-r from-rose-500 to-purple-500"
+  },
   "commands": [
     {
       "name": "base64",
       "title": "Encode/Decode Base64",
       "subtitle": "",
       "description": "",
-      "runtime": "worker",
-      "code": "\"use strict\";(()=>{function r(t){let e=new MessageChannel;e.port1.onmessage=n=>{t(n.data.value)},self.postMessage({type:\"InitOnSearchChange\"},[e.port2])}function i(t){postMessage({type:\"Render\",component:t.toJSON()})}var o=class{constructor(t=[]){this.items=t,this.isShowingDetail=!1,this.isLoading=!1,this.filtering=!0,this.titleLayout=\"row\",this.setItems=e=>(this.items=e,this),this.addItem=e=>(this.items.push(e),this),this.setLoading=e=>(this.isLoading=e,this),this.setShowingDetail=e=>(this.isShowingDetail=e,this)}setTitleLayout(t){return this.titleLayout=t,this}setFiltering(t){return this.filtering=t,this}toJSON(){return{type:\"list\",isLoading:this.isLoading,isShowingDetail:this.isShowingDetail,filtering:this.filtering,titleLayout:this.titleLayout,items:this.items.map(t=>t.detail?{...t,detail:t.detail.toJSON()}:t)}}};function a(t){try{let e=new TextEncoder().encode(t);return btoa(String.fromCharCode.apply(null,e))}catch{return\"\"}}function c(t){try{let e=atob(t).split(\"\").map(s=>s.charCodeAt(0));return new TextDecoder().decode(new Uint8Array(e))}catch{return\"\"}}async function d(){let t=await u(),e=new o(t).setFiltering(!1);r(async n=>{let s=await u(n);e.setItems(s),i(e)}),i(e)}async function u(t=\"\"){let e=a(t),n=c(t);return[{title:\"Encoded!\",icon:\"code.svg\",subtitle:e,actions:[{type:\"CopyToClipboard\",content:e}]},{title:\"Decoded\",icon:\"code.svg\",subtitle:n,actions:[{type:\"CopyToClipboard\",content:n}]}]}d();})();\n\ndocument.addEventListener(\"keydown\",e=>{\"Escape\"===e.key&&window.parent.postMessage({type:\"escape\"},\"*\")});\n\n"
+      "icon": {
+        "name": "lucide--code",
+        "className": "bg-gradient-to-r from-rose-500 to-purple-500"
+      },
+      "mode": "preset-ui",
+      "code": "\"use strict\";(()=>{var o;(function(t){t.Render=\"Render\",t.InitOnFilterChange=\"InitOnFilterChange\",t.OnFilterChange=\"OnFilterChange\",t.InitOnSearchChange=\"InitOnSearchChange\",t.OnSearchChange=\"OnSearchChange\"})(o||(o={}));function r(t){return t.type===\"CustomAction\"}function c(t){let n=new MessageChannel;n.port1.onmessage=e=>{t(e.data.value)},self.postMessage({type:o.InitOnSearchChange},[n.port2])}function h(t){return t?.type===\"customAction\"&&Reflect.has(t,\"itemIndex\")}function g(t){return t?.type===\"onItemSelect\"}var i=class{constructor(n){this.setState=e=>{let s=e?.items?.length?!1:this.state.isLoading;this.state={...this.state,isLoading:s,...e},this.render()},this.onSelectItem=e=>(this.onItemSelectCallback=e,this),this.run=()=>(this.render(),self.addEventListener(\"message\",async e=>{if(h(e.data)){let a=this.state.items[e.data.itemIndex].actions[e.data.actionIndex];r(a)&&a.onClick?.()}if(g(e.data)){let s=this.state.items[e.data.itemIndex];if(typeof s.detail==\"function\"){postMessage({type:\"detail\",isLoading:!0,data:[]});let a=await s.detail();postMessage({type:\"detail\",isLoading:!1,data:a})}}}),this),this.render=()=>{postMessage({type:o.Render,payload:{type:\"list\",...this.formatState(this.state)}})},this.state={items:[],isLoading:!1,filtering:!0,titleLayout:\"row\",isShowingDetail:!1,...n}}formatState(n){let e=n.items.map(s=>({...s,detail:typeof s.detail==\"function\"?\"functionDetail\":s.detail,actions:s.actions?.map(a=>{if(!r(a))return a;let{onClick:m,...p}=a;return p})}));return{...this.state,items:e}}};function d(t){try{let n=new TextEncoder().encode(t);return btoa(String.fromCharCode.apply(null,n))}catch{return\"\"}}function l(t){try{let n=atob(t).split(\"\").map(s=>s.charCodeAt(0));return new TextDecoder().decode(new Uint8Array(n))}catch{return\"\"}}async function f(){let t=new i({isLoading:!0,items:[],filtering:!1}).run();u().then(n=>{t.setState({items:n})}),c(async n=>{let e=await u(n);t.setState({items:e})})}async function u(t=\"\"){let n=d(t),e=l(t);return[{title:\"Encoded\",icon:\"code.svg\",subtitle:n,actions:[{type:\"CopyToClipboard\",content:n}]},{title:\"Decoded\",icon:\"code.svg\",subtitle:e,actions:[{type:\"CopyToClipboard\",content:e}]}]}f();})();\n\n\"undefined\"!=typeof document&&document.addEventListener(\"keydown\",e=>{\"Escape\"!==e.key||window.$__IS_ACTION_OPEN__||window.parent.postMessage({type:\"escape\"},\"*\")});\n"
     }
   ],
   "assets": {

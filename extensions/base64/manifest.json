@@ -3,14 +3,21 @@
   "title": "Base64",
   "author": "0xZion",
   "description": "Encode and decode base64.",
-  "icon": "logo.png",
+  "icon": {
+    "name": "lucide--code",
+    "className": "bg-gradient-to-r from-rose-500 to-purple-500"
+  },
   "commands": [
     {
       "name": "base64",
       "title": "Encode/Decode Base64",
       "subtitle": "",
       "description": "",
-      "runtime": "worker"
+      "icon": {
+        "name": "lucide--code",
+        "className": "bg-gradient-to-r from-rose-500 to-purple-500"
+      },
+      "mode": "preset-ui"
     }
   ]
 }
