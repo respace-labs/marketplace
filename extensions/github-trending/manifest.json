@@ -10,13 +10,13 @@
     {
       "name": "index",
       "title": "GitHub Trending",
+      "subtitle": "",
       "description": "",
+      "mode": "preset-ui",
       "icon": {
         "name": "mdi--github",
-        "className": "bg-gradient-to-r from-rose-500 to-purple-500"
+        "className": "bg-gradient-to-r from-violet-500 to-fuchsia-500"
       },
-      "runtime": "iframe",
-      "framework": "react",
       "filters": {
         "language": [
           {
