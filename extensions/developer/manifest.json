@@ -1,0 +1,30 @@
+{
+  "name": "developer",
+  "title": "Developer",
+  "description": "PenX Developer Tools",
+  "icon": {
+    "name": "lucide--braces"
+  },
+  "commands": [
+    {
+      "name": "create-extension",
+      "title": "Create Extension",
+      "subtitle": "",
+      "description": "",
+      "icon": {
+        "name": "lucide--braces"
+      },
+      "mode": "preset-ui"
+    },
+    {
+      "name": "manage-extensions",
+      "title": "Manage Extension",
+      "subtitle": "",
+      "description": "",
+      "icon": {
+        "name": "lucide--braces"
+      },
+      "mode": "preset-ui"
+    }
+  ]
+}
