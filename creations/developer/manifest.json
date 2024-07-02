@@ -7,8 +7,8 @@
   },
   "commands": [
     {
-      "name": "create-extension",
-      "title": "Create Extension",
+      "name": "build-creation",
+      "title": "Build a Creation",
       "subtitle": "",
       "description": "",
       "icon": {
@@ -17,8 +17,8 @@
       "mode": "preset-ui"
     },
     {
-      "name": "manage-extensions",
-      "title": "Manage Extension",
+      "name": "manage-creations",
+      "title": "Manage Creations",
       "subtitle": "",
       "description": "",
       "icon": {
