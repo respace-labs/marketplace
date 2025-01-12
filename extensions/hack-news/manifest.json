@@ -1,0 +1,48 @@
+{
+  "name": "hack-news",
+  "title": "Hacker News",
+  "author": "0xZion",
+  "description": "This is a hack news demo.",
+  "icon": {
+    "name": "mdi--react",
+    "className": "bg-gradient-to-r from-violet-500 to-fuchsia-500"
+  },
+  "commands": [
+    {
+      "name": "index",
+      "title": "Hack News",
+      "description": "Get the latest Hacker News stories.",
+      "icon": {
+        "name": "lucide--list",
+        "className": "bg-gradient-to-r from-rose-500 to-purple-500"
+      },
+      "runtime": "iframe",
+      "framework": "react",
+      "filters": {
+        "type": [
+          {
+            "label": "Top",
+            "value": "top",
+            "selected": true
+          },
+          {
+            "label": "New",
+            "value": "new"
+          },
+          {
+            "label": "Ask",
+            "value": "ask"
+          },
+          {
+            "label": "Job",
+            "value": "job"
+          },
+          {
+            "label": "Show",
+            "value": "show"
+          }
+        ]
+      }
+    }
+  ]
+}
